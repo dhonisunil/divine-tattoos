@@ -1,0 +1,325 @@
+.topline {
+    width: 100%;
+    height: 7px;
+    background-color: #FFEFD5;
+}
+/* nav bar style start */
+
+.nav{
+    min-height: 60px;
+    margin-top: 10px;
+}
+.nav .nav-links .nav-link img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 3px;
+    transition: var(--transition);
+}
+
+.nav .nav-links .nav-link img:hover {
+    transform: translateY(-4px);
+}
+
+.nav .nav-links ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.nav.nav-imp{
+  min-height: 40px;
+  margin-top: 2px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: var(--clr-black);
+  z-index: 10;
+}
+.text-color {
+    background: linear-gradient(90deg,skyblue,rgb(191, 103, 246),hotpink);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.nav.nav-imp .nav-links .nav-link img {
+    width: 30px;
+    height: 30px;
+    border-radius: 1%;
+    padding: 1px;
+    transition: var(--transition);
+}
+
+/* nav bar style ends */
+/* map nav start */
+.location {
+
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.location .map img {
+    width: 30px;
+    height: 30px;
+}
+
+.location .map1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location .map1 h4 {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    font-style: italic;
+    
+    /* add font style */
+}
+
+.location .addres img {
+    width: 35px;
+    height: 35px;
+
+}
+
+.location .addres h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--clr-biscuit);
+    font-weight: bold;
+    font-size: 18px;
+    font-style:oblique ;
+}
+
+.location .location-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.location .addres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* map nav end */
+
+/* hero baner start */
+.hero-baner .hero-img {
+    aspect-ratio: 9/25;
+    overflow: hidden;
+}
+
+.hero-baner .hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-baner .hero-imgs {
+    display: flex;
+
+}
+
+.hero-baner .hero-imgs::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.543);
+}
+.hero-baner:hover{
+    box-shadow: var(--box-shadow);
+}
+
+/* hero-logo and button */
+.hero-baner .hero-logo img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.book-appointment {
+    min-height: 20px;
+    min-width: 100px;
+    border-radius: var(--radius);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+    transition: var(--transition);
+    color: var(--clr-white) !important;
+    background: linear-gradient(to right,
+            rgba(255, 0, 212, 0.632), rgb(5, 5, 233));
+        
+}
+
+.book-appointment:hover {
+    background: linear-gradient(to left,
+            rgba(255, 0, 212, 0.632), rgb(5, 5, 233));
+}
+
+
+
+.hero-baner .hero-center {
+    position: relative;
+}
+
+.hero-baner .hero-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0%;
+    right: 27%;
+
+}
+
+.hero-baner .hero-logo p {
+    font-size: 10px;
+    color: var(--clr-white-light);
+    padding-bottom: 10px;
+}
+
+.hero-baner .hero-logo p span {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+/* hero baner end */
+/* service info start */
+.service-info{
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--clr-white-light);
+    
+    
+}
+.service-info p{
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 2;    
+}
+
+/* service info end */
+
+/* service types start */
+.service-types-container .pic{
+    aspect-ratio: 355/250;
+    overflow: hidden;
+}
+.service-types-container .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius);
+}
+.service-types-container .two-container{
+    aspect-ratio: 355/250;
+    overflow: hidden;
+    
+}
+.service-types-container .two-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.service-types-container .two-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 7px;
+}
+.service-types-container .view-all {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.service-types-container h2{
+    color: var(--clr-white-light);
+}
+/* service types end */
+/* owner start */
+.owner .owner-img{
+    aspect-ratio: 200/160;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+}
+.owner .owner-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid 4px rgba(250, 25, 25, 0.785);
+}
+.owner .owner-img::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.543);
+}
+.owner h3 {
+    font-style:oblique;
+    color: var(--clr-white-light);
+}
+.owner p{
+    color: var(--clr-white-light);
+}
+/* owner end */
+
+/* note start */
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-white-light);
+}
+/* note end */
+/* footer start */
+.footer{
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: sticky;
+    bottom: 0;
+    background-color: var(--clr-black);
+}
+.footer .footer-link img{
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+}
+.footer .footer-links{
+    display: flex;
+    justify-content: space-evenly;
+   align-items: center;
+   column-gap: 30px;
+}
+/* footer end */
